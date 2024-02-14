@@ -1,0 +1,208 @@
+body{
+    overflow-x: hidden;
+    color: white;
+}
+.nav-link{
+    transition: transform 0.3s ease-in-out;
+}
+.nav-link:hover{
+  border-bottom: solid 2px white;
+  color: white;
+  transform: scale(1.15);
+  padding-bottom: 0px;
+}
+.nav-item{
+    padding: 0 20px;
+}
+.sliding-text {
+  overflow: hidden; /* Ensure text doesn't overflow */
+
+  opacity: 0; /* Initially hide text */
+}
+
+.slide-in {
+  animation: slideRight 2s forwards; /* Set animation duration and fill mode */
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-10%); /* Initial position */
+    opacity: 0; /* Start with opacity 0 */
+  }
+  100% {
+    transform: translateX(0%); /* Slide right */
+    opacity: 1; /* Fade in at the end */
+  }
+}
+#name{
+    font-size: 100px;
+    letter-spacing: 10px;
+}
+#greeting {
+    font-size: 30px;
+    letter-spacing: 0.5rem;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+  }
+#about{
+  padding: 50px;
+  letter-spacing: 6px;
+  color:orange;
+
+}
+#home{
+  background-image: url('./media/prof2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 1);
+  width: 100%;
+  height: 85vh;
+  margin: 0;
+  
+}
+#about-intro{
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+i{
+  font-size: 30px;
+}
+
+.ig-pink{
+  background: -webkit-linear-gradient(rgb(214,21,118),rgb(150,47,201));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.profile-pic{
+  border-radius: 30%;
+  transition: transform 0.5s ease-in-out;
+  margin-top: 50px;
+  margin-bottom: 0%;
+}
+.profile-pic:hover{
+  transform: scale(1.2);
+}
+#row3-col1{
+  padding-bottom: 0%;
+}
+#row2-col1{
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+#pic-container{
+  height: 100%;
+  padding-left: 5.5%; 
+  padding-bottom: 20%;
+  
+
+}
+#education{
+  color: orange;
+  padding: 50px;
+  letter-spacing: 6px;
+}
+
+#bgrnd{
+  background-image: url('./media/prof2.jpg');
+}
+#second-row{
+  justify-content: space-evenly;
+  background-color: white;
+}
+#third-row{
+  justify-content: space-evenly;
+}
+#interests{
+  color: orange;
+  padding: 50px;
+  letter-spacing: 6px;
+}
+.interests-icon{
+  font-size: 60px;
+  transition: all 0.4s ease-in-out;
+}
+.interests-icon:hover{
+  background: -webkit-linear-gradient(rgb(214,21,118),rgb(150,47,201));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 75px;
+}
+ 
+  
+  @keyframes typing {
+    0.0000%, 27.3488% { content: ""; }
+    1.1395%, 26.2093% { content: "s"; }
+    2.2791%, 25.0698% { content: "st"; }
+    3.4186%, 23.9302% { content: "stu"; }
+    4.5581%, 22.7907% { content: "stud"; }
+    5.6977%, 21.6512% { content: "stude"; }
+    6.8372%, 20.5116% { content: "studen"; }
+    7.9767%, 20.3721% { content: "student"; }
+
+    30.7674%, 57.2791% { content: ""; }
+    31.9070%, 55.1395% { content: "m"; }
+    33.0465%, 54.0000% { content: "mu"; }
+    34.1860%, 52.8605% { content: "mus"; }
+    35.3256%, 51.7209% { content: "music"; }
+    36.4651%, 50.5814% { content: "musici"; }
+    37.6047%, 49.4420% { content: "musicia"; }
+    38.7%, 48.3% {content: "musician";}
+    
+
+    63.6977%, 97.2093% { content: ""; }
+    65.8372%, 97.0698% { content: "d"; }
+    66.9767%, 95.9302% { content: "de"; }
+    68.1163%, 94.7907% { content: "dev"; }
+    69.2558%, 93.6512% { content: "deve"; }
+    70.3953%, 92.5116% { content: "devel"; }
+    71.5349%, 91.3721% { content: "develo"; }
+    72.6744%, 90.2326% { content: "develop"; }
+    73.8139%, 89.0930% { content: "develope"; }
+    74.9535%, 87.9535% { content: "developer"; }
+    
+}
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .typewriter {
+    --caret: currentcolor;
+  }
+  
+  .typewriter::before {
+    content: "";
+    animation: typing 13.5s infinite;
+  }
+  
+  .typewriter::after {
+    content: "";
+    border-right: 1px solid var(--caret);
+    animation: blink 0.5s linear infinite;
+  }
+  
+  .typewriter.thick::after {
+    border-right: 1ch solid var(--caret);
+  }
+  
+@media only screen and (max-width: 768px){
+    #row3-col1{
+      margin-top: 50px;
+      
+      text-align: center;
+    }
+    #name{
+     font-size: 60px;
+}
+    #socials{
+    text-align: center;
+   
+
+    
+    }
+    #about{
+     padding-bottom: 0px;
+    }
+}

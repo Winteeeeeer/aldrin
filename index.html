@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aldrin C. Zamora</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <a class="navbar-brand ms-5 text-light" href="#">DRIN.</a>
+        <button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#interests">Interests</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="row" id="home">
+        <div class="col-sm-12 text-center my-auto text-warning">
+            <h1 id="name">Aldrin C. Zamora</h1>
+            <h1 aria-label="Hi! I'm a developer" id="greeting">
+                Hi! I'm a&nbsp;<span class="typewriter thick"></span>
+
+            </h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <h1 id="about">ABOUT ME</h1>
+        </div>
+    </div>
+    <div class="row align-items ">
+        <div class="col-sm-4">
+            <div class="container pb-0 text-center" id="row2-col1">
+                <p id="about-intro"><b>NAME</b><br>Aldrin C. Zamora</p>
+                <p id="about-intro"><b>AGE</b><br>20 years old</p>
+                <p id="about-intro"><b>BIRTHDATE</b><br>October 25, 2003</p>
+                <p id="about-intro"><b>BIRTHPLACE</b><br>Binangonan, Rizal</p>
+                <p id="about-intro"><b>RESIDENCE</b><br>Binangonan, Rizal</p>
+                <p id="about-intro"><b>PROGRAM</b><br>BS Computer Engineering</p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="container text-center" id="pic-container">
+                <img src="media/profile.jpg" alt="Profile Picture" width="auto" height="300px" class="profile-pic">
+
+            </div>
+        </div>
+
+        <div class="col-sm-3 ">
+            <div class="container pb-5 ps-5 text-center" id="socials">
+                <i class="bi bi-facebook text-primary"></i>
+                <p>Aldrin C. Zamora</p>
+                <i class="bi bi-envelope text-light"></i>
+                <p>drinzamora252gmail.com</p>
+                <i class="bi bi-instagram ig-pink"></i>
+                <p>drinzamra</p>
+                <i class="bi bi-github text-light"></i>
+                <p>EngrAldrin</p>
+                <i class="bi bi-telegram text-primary"></i>
+                <p>aldrin zamora</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Function to check if an element is in viewport
+        function isInViewport(element) {
+          var rect = element.getBoundingClientRect();
+          return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+          );
+        }
+      
+        // Function to handle scroll event
+        function handleScroll() {
+          var slidingTextElements = document.querySelectorAll('.sliding-text');
+          slidingTextElements.forEach(function(slidingText) {
+            if (isInViewport(slidingText)) {
+              slidingText.classList.add('slide-in');
+            }
+          });
+        }
+      
+        // Add scroll event listener
+        window.addEventListener('scroll', handleScroll);
+      </script>
+    <div id="bgrnd">
+        <div class="container text-center">
+            <h1 class="h1 m-auto" id="interests">INTERESTS</h1>
+        </div>
+    
+        <div class='row bg-dark py-auto mb-5 pt-5' id="third-row">
+    
+            <div class="col-sm-3">
+                <div class="container text-center sliding-text">
+                    <i class="bi bi-car-front-fill text-warning interests-icon"></i>
+                    <h1 class="h1">Traveling</h1>
+                    <p>Visiting new places, exploring various landscapes, and appreciating the beauty of scenic views and
+                        nature.</p>
+                </div>
+    
+                <div class="container text-center sliding-text">
+                    <i class="fa-solid fa-utensils text-warning interests-icon py-3"></i>
+                    <h1 class="h1">Food</h1>
+                    <p>Savoring diverse flavors, exploring different cuisines, experimenting with cooking, and consuming a
+                        wide variety of dishes.</p>
+                </div>
+            </div>
+    
+            <div class="col-sm-3">
+                <div class="container text-center sliding-text">
+                    <i class="bi bi-cup-hot text-warning interests-icon"></i>
+                    <h1 class="h1">Coffee</h1>
+                    <p>Delighting in the rich and varied world of coffee, enjoy sipping and exploring different coffee beans
+                        and flavors.</p>
+                </div>
+                <div class="container text-center sliding-text">
+                    <i class="bi bi-controller text-warning interests-icon"></i>
+                    <h1 class="h1">Video Games</h1>
+                    <p>Immersing myself in virtual worlds, solving challenges, exploring various genres and connecting with
+                        gaming communities.</p>
+                </div>
+            </div>
+    
+            <div class="col-sm-3">
+                <div class="container text-center sliding-text">
+                    <i class="fa-solid fa-music interests-icon text-warning"></i>
+                    <h1 class="h1">Music</h1>
+                    <p>Playing songs with guitar and enjoying the different melodies.</p>
+                </div>
+                <div class="container text-center pb-5 sliding-text">
+                    <i class="fa-solid fa-clapperboard interests-icon text-warning py-3"></i>
+                    <h1 class="h1">Anime</h1>
+                    <p>Fascinated by the thrilling narratives and captivating animated stories in the world of anime and
+                        manga.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row bg-white">
+        <div class="col-sm-12 text-center">
+            <h1 id="education">EDUCATION</h1>
+        </div>
+    </div>
+
+    <div class='row align-self' id="second-row">
+        <div class="col-sm-4">
+            <div class="container pb-5 px-5 text-center">
+                <img src="media/IMG1.jfif" height="300px" width="auto">
+                <h3 class="h3 text-dark">Tayuman Elementary School</h3>
+                <h5 class="h5 text-primary">PRIMARY</h5>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="container pb-5 px-5 text-center">
+                <img src="media/IMG2.jfif" height="300px" width="auto">
+                <h3 class="h3 text-dark">Don Jose Memorial National High School</h3>
+                <h5 class="h5 text-primary">SECONDARY</h5>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="container pb-5 px-5 text-center">
+                <img src="media/urs.jpg" height="300px" width="auto">
+                <h3 class="h3 text-dark">University of Rizal System - Morong Campus</h3>
+                <h5 class="h5 text-primary">TERTIARY</h5>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
